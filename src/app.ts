@@ -8,7 +8,7 @@ app.use(cors());
 app.use(express.json());
 
 // Routes
-app.get("/", (req, res) => {
+app.get("/health", (req, res) => {
   return res.json({ success: true, status: 200 });
 });
 
