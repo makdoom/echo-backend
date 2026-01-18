@@ -10,6 +10,8 @@ export const ENV = {
   nodeEnv,
   port: process.env.PORT || 8080,
 
+  corsOrigin: process.env.CORS_ORIGIN || "*",
+
   // Developement
   redisHost: process.env.REDIS_HOST,
   redisPort: Number(process.env.REDIS_PORT),
