@@ -1,5 +1,19 @@
-import "dotenv/config";
+import dotenv from "dotenv";
+
+const nodeEnv = process.env.NODE_ENV || "development";
+
+dotenv.config({
+  path: `.env.${nodeEnv}`,
+});
 
 export const ENV = {
-  PORT: process.env.PORT || 8080,
-};
+  nodeEnv,
+  port: process.env.PORT || 8080,
+
+  // Developement
+  redisHost: process.env.REDIS_HOST,
+  redisPort: Number(process.env.REDIS_PORT),
+
+  // Production
+  redisURL: process.env.REDIS_URL,
+} as const;
