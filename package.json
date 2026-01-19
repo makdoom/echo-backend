@@ -16,10 +16,13 @@
   "packageManager": "pnpm@10.28.0",
   "dependencies": {
     "@socket.io/redis-streams-adapter": "^0.2.3",
+    "better-auth": "^1.4.15",
     "cors": "^2.8.5",
     "dotenv": "^17.2.3",
+    "drizzle-orm": "^0.45.1",
     "express": "^5.2.1",
     "ioredis": "^5.9.2",
+    "pg": "^8.17.1",
     "socket.io": "^4.8.3"
   },
   "devDependencies": {
@@ -27,6 +30,8 @@
     "@types/cors": "^2.8.19",
     "@types/express": "^5.0.6",
     "@types/node": "^25.0.9",
+    "@types/pg": "^8.16.0",
+    "drizzle-kit": "^0.31.8",
     "eslint": "^9.39.2",
     "globals": "^17.0.0",
     "nodemon": "^3.1.11",
