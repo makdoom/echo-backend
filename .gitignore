@@ -2,3 +2,4 @@ node_modules
 dist
 .env.production
 .DS_Store
+.env
